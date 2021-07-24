@@ -23,12 +23,12 @@ function chk_firewall() {
 function install_sea() {
 	cd /home/MyCloud
 	#下载安装包6.2.3 64bit
-	wget http://seafile-downloads.oss-cn-shanghai.aliyuncs.com/seafile-server_7.1.5_x86-64.tar.gz
+	wget http://seafile-downloads.oss-cn-shanghai.aliyuncs.com/seafile-server_8.0.6_x86-64.tar.gz
 	#解压
-	tar -zxvf seafile-server_6.2.3_x86-64.tar.gz
+	tar -zxvf seafile-server_8.0.6_x86-64.tar.gz
 	mkdir installed
 	mv seafile-server*.tar.gz ./installed
-	mv seafile-server-6* seafile-server
+	mv seafile-server-8* seafile-server
 	#安装依赖环境
 	yum -y install python-setuptools python-imaging python-ldap MySQL-python python-memcached python-urllib3
 	#进行安装
